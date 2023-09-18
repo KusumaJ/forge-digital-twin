@@ -11,8 +11,7 @@ let FORGE_CLIENT_SECRET="9vbBM4cpt9cbk9tV";
 
 let FORGE_MODEL_URN="dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6ZGdlcDdpdWtkYjdpaGp3aWM5ZWk1am94bXhsYWE2c3gtYmFzaWMtYXBwL1ZpbGxhXzIwMjJfdXBkYXRlZC5ydnQ";
 
-let MONGODB_URL="mongodb://localhost:27017";
-
+let MONGODB_URL="mongodb://eklavyaagarwal1810:ts3dMpKAnSsfAFno@ac-dyqbwx1-shard-00-00.mrorrsw.mongodb.net:27017,ac-dyqbwx1-shard-00-01.mrorrsw.mongodb.net:27017,ac-dyqbwx1-shard-00-02.mrorrsw.mongodb.net:27017/mymongodb?ssl=true&replicaSet=atlas-zcbtu1-shard-0&authSource=admin&retryWrites=true&w=majority";
 let FORGE_BUCKET,PORT;
 
 if (!FORGE_CLIENT_ID || !FORGE_CLIENT_SECRET || !FORGE_MODEL_URN || !MONGODB_URL) {
