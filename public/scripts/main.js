@@ -13,6 +13,7 @@ const options = {
 let mainViewer = null;
 
 Autodesk.Viewing.Initializer(options, () => {
+    console.log("hello world");
     mainViewer = new Autodesk.Viewing.Private.GuiViewer3D(
         document.getElementById('viewer'),
         { extensions: ['HeatmapExtension', 'IssuesExtension', 'AnimationExtension'] }

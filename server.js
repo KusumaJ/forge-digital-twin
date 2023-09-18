@@ -3,7 +3,18 @@ const path = require('path');
 const helmet = require('helmet');
 const morgan = require('morgan');
 
-const { FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_MODEL_URN, MONGODB_URL } = process.env;
+// const { FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_MODEL_URN, MONGODB_URL } = process.env;
+
+let FORGE_CLIENT_ID="DGEP7IuKDb7ihJwic9eI5joxMXlAa6sx";
+let FORGE_CLIENT_SECRET="9vbBM4cpt9cbk9tV";
+
+
+let FORGE_MODEL_URN="dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6ZGdlcDdpdWtkYjdpaGp3aWM5ZWk1am94bXhsYWE2c3gtYmFzaWMtYXBwL1ZpbGxhXzIwMjJfdXBkYXRlZC5ydnQ";
+
+let MONGODB_URL="mongodb://localhost:27017";
+
+let FORGE_BUCKET,PORT;
+
 if (!FORGE_CLIENT_ID || !FORGE_CLIENT_SECRET || !FORGE_MODEL_URN || !MONGODB_URL) {
   console.warn('Provide all the following env. variables to run this application:');
   console.warn('FORGE_CLIENT_ID, FORGE_CLIENT_SECRET, FORGE_MODEL_URN, MONGODB_URL');
